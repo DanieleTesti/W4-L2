@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi su float</title>
+    <style>
+      html,
+      body {
+        background-color: lightgrey;
+        height: 100%;
+        margin: 0;
+      }
+
+      .container {
+        width: 800px;
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+
+      header {
+        background-color: mediumblue;
+        text-align: center;
+      }
+
+      header h1 {
+        /*selettore più generico rispetto a header>h1 che prende gli h1 subito dopo l'header*/
+        margin: 0;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        margin-top: 10px;
+        background-color: lightblue;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none; /*ELIMINARE I PALLINI*/
+      }
+
+      ul li a {
+        color: black;
+        text-decoration: none;
+      }
+
+      ul li {
+        display: inline;
+        padding: 0 20px;
+      }
+
+      aside {
+        width: 250px;
+        float: right; /*PER METTER4E IL TESTO ACCANTO, FA FLUTTUARE IL TESTO*/
+        /* VA APPLICATO SULL'ELEMENTO CON L'ALTEZZA MINORE */
+      }
+
+      aside img {
+        width: 100%;
+      }
+
+      footer {
+        text-align: center;
+        background-color: lightpink;
+        clear: right; /*PER ANDARE A METTERE ILFLOAT SOTTO LA PAGINA, VISTO CHE C'E' UNO SPAZIO VUOTO, E PER GFA TORNARE GLI ELEMENTI A SCRIVERE NORMALI*/
+        margin: 0;
+      }
+
+      footer h4 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>EPICODE</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">HTML</a>
+            </li>
+            <li>
+              <a href="#">CSS</a>
+            </li>
+            <li>
+              <a href="#">JAVASCRIPT</a>
+            </li>
+            <li>
+              <a href="#">TYPESCRIPT</a>
+            </li>
+            <li>
+              <a href="#">REACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <aside>
+          <img src="https://placekitten.com/500" alt="kitten picture" />
+        </aside>
+        <section>
+          <p>
+            Tiramisu tiramisu shortbread muffin tart cake macaroon. Lemon drops
+            tiramisu sweet jelly candy canes croissant tart. Marshmallow chupa
+            chups jelly-o powder halvah shortbread. Chocolate cake I love jelly
+            beans sweet fruitcake candy canes. Pie soufflé pie cake sugar plum
+            oat cake. Shortbread soufflé cupcake oat cake cotton candy chocolate
+            bar.
+          </p>
+          <p>
+            Tiramisu tiramisu shortbread muffin tart cake macaroon. Lemon drops
+            tiramisu sweet jelly candy canes croissant tart. Marshmallow chupa
+            chups jelly-o powder halvah shortbread. Chocolate cake I love jelly
+            beans sweet fruitcake candy canes. Pie soufflé pie cake sugar plum
+            oat cake. Shortbread soufflé cupcake oat cake cotton candy chocolate
+            bar.
+          </p>
+        </section>
+
+        <footer>
+          <h4>EPICODE</h4>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
