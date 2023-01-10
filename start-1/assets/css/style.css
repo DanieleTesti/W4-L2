@@ -412,6 +412,7 @@ footer a {
     text-align: center;
     background-color: rgba(244, 245, 245, 0.791);
     z-index: 1;
+    font-size: x-large;
   }
 
   .top a {
@@ -419,19 +420,19 @@ footer a {
   }
 
   .top {
-    padding-top: 0.5em;
+    padding-top: 0.2em;
     bottom: 0px;
     right: 0px;
   }
 
   .add {
-    padding-top: 0.5em;
+    padding-top: 0.2em;
     bottom: 50px;
     right: 0px;
   }
 
   .calendar {
-    padding-top: 0.5em;
+    padding-top: 0.2em;
     bottom: 100px;
     right: 0px;
   }
@@ -496,6 +497,7 @@ footer a {
     height: 40px;
     text-align: center;
     background-color: rgba(244, 245, 245, 0.791);
+    font-size: x-large;
   }
 
   .top {
@@ -504,21 +506,24 @@ footer a {
     text-align: center;
     right: 0px;
     bottom: 10px;
-    padding-top: 0.5em;
+    /* padding-top: 0.5em; */
+    z-index: 1000;
   }
 
   .add {
-    top: 50px;
+    top: 90px;
     position: absolute;
     right: 0px;
-    padding-top: 0.5em;
+    /* padding-top: 0.5em; */
+    z-index: 1000;
   }
 
   .calendar {
-    top: 100px;
+    top: 140px;
     position: absolute;
     right: 0px;
-    padding-top: 0.5em;
+    /* padding-top: 0.5em; */
+    z-index: 1000;
   }
 
   .top a {
